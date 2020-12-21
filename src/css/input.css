@@ -1,0 +1,66 @@
+.input-form {
+  display: flex;
+  align-items: center;
+}
+
+.input-input {
+  font-size: 16px;
+  padding: 30px 0;
+  width: 100%;
+  margin-right: 12px;
+  outline: none;
+  border: none;
+}
+
+.input-input:focus {
+  outline: none;
+  border: none;
+}
+
+.input-input:focus::placeholder {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.input-input:focus::placeholder {
+  opacity: 0;
+}
+
+.input-mic {
+  margin-right: 24px;
+  opacity: .54;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.input-mic:hover {
+  opacity: .64;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-add-button {
+  width: 36px;
+  height: 36px;
+  background-color: #438E29;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: all .2s ease;
+  outline: none;
+  border: none;
+}
+
+.input-add-button:focus {
+  outline: none;
+  border: none;
+}
+
+.input-add-button:hover {
+  background-color: #8AD671;
+}

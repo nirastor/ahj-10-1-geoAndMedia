@@ -45,6 +45,7 @@ export default class Input {
   }
 
   positionDetected(position) {
+    console.log(position);
     this.latitude = position.coords.latitude;
     this.longitude = position.coords.longitude;
   }

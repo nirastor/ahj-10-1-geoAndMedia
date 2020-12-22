@@ -17,7 +17,7 @@
   border: none;
 }
 
-.input-input:focus::placeholder {
+.input-input::placeholder {
   opacity: 1;
   transition: all .3s ease;
 }
@@ -31,6 +31,7 @@
   opacity: .54;
   transition: all .2s ease;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .input-mic:hover {
@@ -54,6 +55,7 @@
   transition: all .2s ease;
   outline: none;
   border: none;
+  flex-shrink: 0;
 }
 
 .input-add-button:focus {
@@ -63,4 +65,27 @@
 
 .input-add-button:hover {
   background-color: #8AD671;
+}
+
+.input-add-button--disable {
+  background-color: #888888;
+}
+
+.input-add-button--disable:hover {
+  background-color: #888888;
+}
+
+.popup-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: translateY(-102%);
+  transition: all .3s ease;
+  display: none;
+}
+
+
+.popup-show {
+  display: block;
 }

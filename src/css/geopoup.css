@@ -1,0 +1,63 @@
+.geo-popup-form {
+  padding: 14px 3% 24px;
+  border-top: 2px solid #E63946;
+  /* border-bottom: 2px solid #1D3557; */
+  background-color: #fff;
+}
+
+.geo-popup-title {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.geo-popup-text {
+  font-weight: #aaaaaa;
+  margin-bottom: 7px;
+}
+
+.geo-popup-input {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 7px;
+  padding: 7px 1%;
+  margin-left: -1%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+  /* border-radius: 0px; */
+  outline: none;
+  background-color: #fff;
+}
+
+.geo-popup-input:focus {
+  outline: none;
+}
+
+.geo-popup-input::placeholder {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.geo-popup-input:focus::placeholder {
+  opacity: 0;
+}
+
+.geo-popup-button {
+  font-size: 16px;
+  line-height: 30px;
+  padding: 0 30px;
+  color: white;
+  background-color: #1D3557;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.geo-popup-error {
+  color: #E63946;
+  margin-bottom: 0px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}

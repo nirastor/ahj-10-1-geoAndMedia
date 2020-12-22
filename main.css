@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: #457B9D;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  color: black;
+  font-size: 16px;
+}
+
+.app-column {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 100px;
+  max-width: 800px;
+  background-color: #E2F3F3;
+  min-height: 100vh;
+  box-shadow: 0 0 10px -1px #1D3557;
+}
+
+.app-input {
+  margin: 0 auto;
+  padding: 0 3%;
+  max-width: 800px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  border-top: 2px solid #1D3557;
+}
+.input-form {
+  display: flex;
+  align-items: center;
+}
+
+.input-input {
+  font-size: 16px;
+  padding: 30px 0;
+  width: 100%;
+  margin-right: 12px;
+  outline: none;
+  border: none;
+}
+
+.input-input:focus {
+  outline: none;
+  border: none;
+}
+
+.input-input::placeholder {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.input-input:focus::placeholder {
+  opacity: 0;
+}
+
+.input-mic {
+  margin-right: 24px;
+  opacity: .54;
+  transition: all .2s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.input-mic:hover {
+  opacity: .64;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-add-button {
+  width: 36px;
+  height: 36px;
+  background-color: #438E29;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: all .2s ease;
+  outline: none;
+  border: none;
+  flex-shrink: 0;
+}
+
+.input-add-button:focus {
+  outline: none;
+  border: none;
+}
+
+.input-add-button:hover {
+  background-color: #8AD671;
+}
+
+.input-add-button--disable {
+  background-color: #888888;
+}
+
+.input-add-button--disable:hover {
+  background-color: #888888;
+}
+
+.popup-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: translateY(-102%);
+  transition: all .3s ease;
+  display: none;
+}
+
+
+.popup-show {
+  display: block;
+}
+.card {
+  background-color:white;
+  color: black;
+  border-radius: 8px;
+  padding: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 10px -3px #1D3557;
+  position: relative;
+}
+
+.card:hover {
+  background-color: #F9F9F9;
+}
+
+.crad:last-child {
+  margin-bottom: 0px;
+}
+
+.card-text {
+  margin-bottom: 7px;
+}
+
+.card-delete-button {
+  opacity: 0;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  transition: all .15s ease;
+  cursor: pointer;
+}
+
+.card:hover .card-delete-button {
+  opacity: 1;
+}
+
+.card-delete-button:hover {
+  color: #E63946;
+}
+
+.card-geo {
+  color: #aaaaaa;
+  display: flex;
+}
+
+.card-geo-lat {
+  margin-right: 12px;
+}
+.geo-popup-form {
+  padding: 14px 3% 24px;
+  border-top: 2px solid #E63946;
+  /* border-bottom: 2px solid #1D3557; */
+  background-color: #fff;
+}
+
+.geo-popup-title {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.geo-popup-text {
+  font-weight: #aaaaaa;
+  margin-bottom: 7px;
+}
+
+.geo-popup-input {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 7px;
+  padding: 7px 1%;
+  margin-left: -1%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+  /* border-radius: 0px; */
+  outline: none;
+  background-color: #fff;
+}
+
+.geo-popup-input:focus {
+  outline: none;
+}
+
+.geo-popup-input::placeholder {
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+.geo-popup-input:focus::placeholder {
+  opacity: 0;
+}
+
+.geo-popup-button {
+  font-size: 16px;
+  line-height: 30px;
+  padding: 0 30px;
+  color: white;
+  background-color: #1D3557;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.geo-popup-error {
+  color: #E63946;
+  margin-bottom: 0px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
